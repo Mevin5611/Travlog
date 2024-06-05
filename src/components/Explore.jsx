@@ -24,29 +24,29 @@ const Explore = () => {
   return (
     <div>
       <section className="flex flex-col justify-center items-center">
-        <div className="md:w-[1184px] h-[867px] md:mt-[60px] mt-[540px]">
-          <div className="h-[100px] flex flex-col md:flex-row justify-between items-center">
+        <div className="xl:w-[1184px] h-[867px] xl:mt-[60px] lg:mt-20 mt-[540px]">
+          <div className="h-[100px] flex flex-col xl:flex-row justify-between items-center">
             <div>
-              <h1 className=" tracking-widest text-[#F85E9F] font-semibold text-lg text-center md:text-left">
+              <h1 className=" tracking-widest text-[#F85E9F] font-semibold text-lg text-center xl:text-left">
                 TOP DESTINATION
               </h1>
-              <h3 className="font-[650] text-[35px] md:text-[38px] ">
+              <h3 className="font-[650] text-[35px] xl:text-[38px] ">
                 Explore top destination
               </h3>
             </div>
-            <div className=" w-full flex justify-between md:justify-center items-end mt-5 md:mt-0">
-              <div className="w-[64px] h-[64px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center border">
+            <div className=" w-full lg:w-[300px] flex justify-between xl:justify-center items-end mt-5 xl:mt-0">
+              <div className="w-[64px] h-[64px] xl:w-[100px] xl:h-[100px] rounded-full flex justify-center items-center border">
                 <img className="w-[24px] h-[24px]" src={leftArrow} alt="" />
               </div>
-              <div className="w-[64px] h-[64px] md:w-[100px] md:h-[100px] rounded-full flex justify-center items-center ms-5 bg-[#5D50C6]">
+              <div className="w-[64px] h-[64px] xl:w-[100px] xl:h-[100px] rounded-full flex justify-center items-center ms-5 bg-[#5D50C6]">
                 <img className="w-[24px] h-[24px]" src={rightArrow} alt="" />
               </div>
               
             </div>
           </div>
 
-          <div className="h-[575px] mt-[140px] md:mt-[32px] md:grid md:grid-cols-3 ">
-            <div className="h-[575px] md:ms-5 mb-5 md:mb-0 md:col-span-1 shadow-md rounded-[32px] ">
+          <div className="  h-[575px] mt-[140px] xl:mt-[32px] lg:grid lg:grid-cols-3 ">
+            <div className="h-[575px] lg:ms-5 mb-5 xl:mb-0 xl:col-span-1 shadow-md rounded-[32px] ">
               <img src={card1} alt="" />
               <div>
                 <div className="m-[32px] h-[101px]">
@@ -65,7 +65,7 @@ const Explore = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[575px] md:ms-5 mb-5 md:mb-0 md:col-span-1 shadow-md rounded-[32px] ">
+            <div className="h-[575px] lg:ms-5 mb-5 xl:mb-0 xl:col-span-1 shadow-md rounded-[32px] ">
               <img src={card2} alt="" />
               <div>
                 <div className="m-[32px] h-[101px]">
@@ -83,7 +83,7 @@ const Explore = () => {
                 </div>
               </div>
             </div>
-            <div className="h-[575px] md:ms-5 mb-5 md:mb-0 md:col-span-1 shadow-md rounded-[32px] ">
+            <div className="h-[575px] lg:ms-5 mb-5 xl:mb-0 xl:col-span-1 shadow-md rounded-[32px] ">
               <img src={card3} alt="" />
               <div>
                 <div className="m-[32px] h-[101px]">
@@ -105,20 +105,20 @@ const Explore = () => {
         </div>
       </section>
       <section className="mt-[1200px] md:mt-0">
-        <div className="mt-[64px] md:w-[1267px] h-[825px]  md:grid md:grid-cols-12">
-          <div className="col-span-8">
+        <div className="mt-[64px] md:w-[1267px] h-[825px]  xl:grid xl:grid-cols-12">
+          <div className="col-span-8 ">
             <img src={mainimg} alt="" />
           </div>
-          <div className="col-span-4">
-            <div className="h-[667px] w-[441px] mt-[64px] flex flex-col items-center">
+          <div className="col-span-4 ">
+            <div className="h-[667px] w-[441px] lg:w-[984px] xl:w-[441px] mt-[64px] flex flex-col items-center xl:ms-[0px] lg:ms-[100px]">
               <h1 className="tracking-widest text-[#F85E9F] font-semibold text-lg text-center md:text-left">
                 TRAVEL POINT
               </h1>
-              <h1 className="font-[650] mt-5 text-[35px] md:text-[38px] text-center md:text-left">
-                We helping you find <br />
+              <h1 className="font-[650] mt-5 text-[35px] md:text-[38px] text-center xl:text-left">
+                We helping you find <br className="hidden xl:block" />
                 your dream location
               </h1>
-              <div className="absolute mt-[210px] ms-[345px] hidden md:block">
+              <div className="absolute mt-[210px] ms-[345px] hidden xl:block">
                 <img  src={travellogo} alt="" />
               </div>
               <p className="text-[#19182580] mt-5 text-center md:text-left">
@@ -160,24 +160,24 @@ const Explore = () => {
           </div>
         </div>
       </section>
-      <section className="mt-[600px] md:mt-0">
-        <div className="md:w-[1184px] md:ms-[83px] h-[800px] md:grid md:grid-cols-12">
-          <div className="col-span-6 flex flex-col justify-center absolute md:relative mt-[600px] md:mt-0 ">
-            <h1 className="tracking-widest text-[#F85E9F] font-semibold text-lg text-center md:text-left">
+      <section className="mt-[600px]  xl:mt-0">
+        <div className="xl:w-[1184px]  xl:ms-[83px] h-[800px] xl:grid xl:grid-cols-12">
+          <div className="col-span-6 lg:w-[984px] flex flex-col justify-center absolute xl:relative mt-[600px] lg:mt-[900px] xl:mt-0 ">
+            <h1 className="tracking-widest text-[#F85E9F] font-semibold text-lg text-center xl:text-left">
               KEY FEATURES
             </h1>
-            <h1 className="font-[650] mt-5 text-[35px] md:text-[38px] text-center md:text-left">
+            <h1 className="font-[650] mt-5 text-[35px] xl:text-[38px] text-center xl:text-left">
               We offer best services
             </h1>
-            <p className="text-[#19182580] mt-5 text-center md:text-left">
+            <p className="text-[#19182580] mt-5 text-center xl:text-left">
               Contrary to popular belief, Lorem Ipsum is not simply random 
-              <br className="hidden md:block" /> text. It has roots in a piece of classical Latin literature 
-              <br className="hidden md:block" />
+              <br className="hidden lg:block" /> text. It has roots in a piece of classical Latin literature 
+              <br className="hidden xl:block" />
               from 45 BC.
             </p>
 
-            <div className="mt-10">
-              <div className="md:w-[549px] h-[164px] flex justify-start items-center m-3 md:m-0 p-2 md:p-0">
+            <div className="mt-10 lg:w-[984px] lg:ms-[100px]">
+              <div className="lg:w-[549px] h-[164px] flex justify-start items-center m-3 xl:m-0 p-2 xl:p-0">
                 <img className="ms-8" src={keylogo1} alt="" />
                 <div className="ms-5">
                   <h3 className="font-bold text-lg">We offer best services</h3>
@@ -187,7 +187,7 @@ const Explore = () => {
                   </p>
                 </div>
               </div>
-              <div className="md:w-[549px] h-[164px] flex justify-start items-center border rounded-[32px] m-3 md:m-0 p-2 md:p-0">
+              <div className="lg:w-[549px] h-[164px] flex justify-start items-center border rounded-[32px] m-3 xl:m-0 p-2 xl:p-0">
                 <img className="ms-8" src={keylogo2} alt="" />
                 <div className="ms-5">
                   <h3 className="font-bold text-lg">We offer best services</h3>
@@ -197,7 +197,7 @@ const Explore = () => {
                   </p>
                 </div>
               </div>
-              <div className="md:w-[549px] h-[164px] flex justify-start items-center m-3 md:m-0 p-2 md:p-0">
+              <div className="lg:w-[549px] h-[164px] flex justify-start items-center m-3 xl:m-0 p-2 xl:p-0">
                 <img className="ms-8" src={keylogo3} alt="" />
                 <div className="ms-5">
                   <h3 className="font-bold text-lg">We offer best services</h3>
@@ -209,14 +209,14 @@ const Explore = () => {
               </div>
             </div>
           </div>
-          <div className="col-span-6 flex justify-center md:items-start ">
-            <img className="md:ms-[83px] ps-20 md:ps-0" src={bg_key} alt="" />
+          <div className="col-span-6 flex justify-center xl:items-start ">
+            <img className="xl:ms-[83px] ps-20 xl:ps-0" src={bg_key} alt="" />
           </div>
         </div>
       </section>
-      <footer className="flex justify-center items-center mt-[540px] md:mt-0">
-        <div className="md:w-[1184px] h-[434px] md:grid md:grid-cols-12 ">
-          <div className="col-span-6 ">
+      <footer className="flex justify-center items-center mt-[540px] lg:mt-[840px] xl:mt-0">
+        <div className="xl:w-[1184px] lg:w-[954px] lg:flex lg:flex-col h-[434px] xl:grid xl:grid-cols-12 ">
+          <div className="col-span-6  lg:w-[954px] lg:p-10 xl:p-0 ">
             <div className="flex justify-start items-center mt-[64px]">
               <img className="w-[40px] h-[40px]" src={logo_nav} alt="" />
               <h1 className="font-bold ps-3 text-lg">Travlog</h1>
@@ -228,9 +228,10 @@ const Explore = () => {
               <div className="w-[32px] h-[32px] bg-[#5D50C6] rounded-full ms-3"><img src={iconi} alt="" /></div>
             </div>
           </div>
-          <div className="col-span-2">
+          <div className=" lg:[954px] col-span-6 grid grid-cols-6 lg:flex lg:justify-between lg:ps-10 lg:pr-10 xl:ps-0 xl:pr-10 ">
+          <div className="col-span-2 ">
             <ul className="mt-[64px]">
-              <li className="font-bold md:mt-5 flex justify-between"><span>Company</span> <div className="md:hidden " onClick={()=> setCompany(!company)}><img src={down} alt="" /></div></li>
+              <li className="font-bold xl:mt-5 flex justify-between"><span>Company</span> <div className="lg:hidden " onClick={()=> setCompany(!company)}><img src={down} alt="" /></div></li>
               
               {
                 company && company ? (
@@ -240,7 +241,7 @@ const Explore = () => {
               <li className="mt-4">Mobile</li>
                   </>
               
-                ) : (<div className="hidden md:block">
+                ) : (<div className="hidden lg:block">
                   <li className="mt-4">About</li>
               <li className="mt-4">Career</li>
               <li className="mt-4">Mobile</li>
@@ -251,7 +252,7 @@ const Explore = () => {
           </div>
           <div className="col-span-2">
           <ul className="mt-[64px] ">
-              <li className="font-bold md:mt-5 flex justify-between"><span>Contact</span> <div className="md:hidden " onClick={()=> setContact(!contact)}><img src={down} alt="" /></div></li>
+              <li className="font-bold xl:mt-5 flex justify-between"><span>Contact</span> <div className="lg:hidden " onClick={()=> setContact(!contact)}><img src={down} alt="" /></div></li>
               {
                 contact && contact ? (
                 <>
@@ -260,7 +261,7 @@ const Explore = () => {
               <li className="mt-4">FAQ's</li>
               <li className="mt-4">Blog</li>
                 </>
-                ) : (<div className="hidden md:block">
+                ) : (<div className="hidden lg:block">
                   <li className="mt-4">Why Travlog?</li>
               <li className="mt-4">Partner with us</li>
               <li className="mt-4">FAQ's</li>
@@ -271,19 +272,20 @@ const Explore = () => {
           </div>
           <div className="col-span-2">
           <ul className="mt-[64px] ">
-              <li className="font-bold md:mt-5 flex justify-between"> <span>Meet Us</span> <div className="md:hidden " onClick={()=> setMeet(!meet)}><img src={down} alt="" /></div></li>
+              <li className="font-bold xl:mt-5 flex justify-between"> <span>Meet Us</span> <div className="lg:hidden " onClick={()=> setMeet(!meet)}><img src={down} alt="" /></div></li>
               {
                 meet && meet ? (
                   <>
                   <li className="mt-4">+00 92 1234 56789</li>
               <li className="mt-4">info@travlog.com</li>
               <li className="mt-4 ">205. R Street, New York <br /> BD23200</li></>
-                ): (<div className="hidden md:block"><li className="mt-4">+00 92 1234 56789</li>
+                ): (<div className="hidden lg:block"><li className="mt-4">+00 92 1234 56789</li>
                 <li className="mt-4">info@travlog.com</li>
                 <li className="mt-4">205. R Street, New York <br /> BD23200</li></div>)
               }
               
             </ul>
+          </div>
           </div>
         </div>
       </footer>
