@@ -18,9 +18,9 @@ import iconi from "../assets/img/iconi.png";
 import down from "../assets/img/arrow-circle-down.9 1.png";
 
 const Explore = () => {
-  const [company,setCompany] = useState(false)
-  const [contact,setContact] = useState(false)
-  const [meet,setMeet] = useState(false)
+  const [company, setCompany] = useState(false);
+  const [contact, setContact] = useState(false);
+  const [meet, setMeet] = useState(false);
   return (
     <div>
       <section className="flex flex-col justify-center items-center">
@@ -41,7 +41,6 @@ const Explore = () => {
               <div className="w-[64px] h-[64px] xl:w-[100px] xl:h-[100px] rounded-full flex justify-center items-center ms-5 bg-[#5D50C6]">
                 <img className="w-[24px] h-[24px]" src={rightArrow} alt="" />
               </div>
-              
             </div>
           </div>
 
@@ -119,7 +118,7 @@ const Explore = () => {
                 your dream location
               </h1>
               <div className="absolute mt-[210px] ms-[345px] hidden xl:block">
-                <img  src={travellogo} alt="" />
+                <img src={travellogo} alt="" />
               </div>
               <p className="text-[#19182580] mt-5 text-center md:text-left">
                 Contrary to popular belief, Lorem Ipsum is not <br /> simply
@@ -170,14 +169,15 @@ const Explore = () => {
               We offer best services
             </h1>
             <p className="text-[#19182580] mt-5 text-center xl:text-left">
-              Contrary to popular belief, Lorem Ipsum is not simply random 
-              <br className="hidden lg:block" /> text. It has roots in a piece of classical Latin literature 
+              Contrary to popular belief, Lorem Ipsum is not simply random
+              <br className="hidden lg:block" /> text. It has roots in a piece
+              of classical Latin literature
               <br className="hidden xl:block" />
               from 45 BC.
             </p>
 
             <div className="mt-10 lg:w-[984px] lg:ms-[100px]">
-              <div className="lg:w-[549px] h-[164px] flex justify-start items-center m-3 xl:m-0 p-2 xl:p-0">
+              <div className="lg:w-[500px] h-[164px] flex justify-start items-center m-3 xl:m-0 p-2 xl:p-0">
                 <img className="ms-8" src={keylogo1} alt="" />
                 <div className="ms-5">
                   <h3 className="font-bold text-lg">We offer best services</h3>
@@ -187,7 +187,7 @@ const Explore = () => {
                   </p>
                 </div>
               </div>
-              <div className="lg:w-[549px] h-[164px] flex justify-start items-center border rounded-[32px] m-3 xl:m-0 p-2 xl:p-0">
+              <div className="lg:w-[500px] h-[164px] flex justify-start items-center border rounded-[32px] m-3 xl:m-0 p-2 xl:p-0">
                 <img className="ms-8" src={keylogo2} alt="" />
                 <div className="ms-5">
                   <h3 className="font-bold text-lg">We offer best services</h3>
@@ -197,7 +197,7 @@ const Explore = () => {
                   </p>
                 </div>
               </div>
-              <div className="lg:w-[549px] h-[164px] flex justify-start items-center m-3 xl:m-0 p-2 xl:p-0">
+              <div className="lg:w-[500px] h-[164px] flex justify-start items-center m-3 xl:m-0 p-2 xl:p-0">
                 <img className="ms-8" src={keylogo3} alt="" />
                 <div className="ms-5">
                   <h3 className="font-bold text-lg">We offer best services</h3>
@@ -221,71 +221,109 @@ const Explore = () => {
               <img className="w-[40px] h-[40px]" src={logo_nav} alt="" />
               <h1 className="font-bold ps-3 text-lg">Travlog</h1>
             </div>
-            <p className="mt-5">Contrary to popular belief, Lorem Ipsum is not simply <br /> random text. It has roots in a piece of classical Latin <br /> literature from 45 BC.</p>
+            <p className="mt-5">
+              Contrary to popular belief, Lorem Ipsum is not simply <br />{" "}
+              random text. It has roots in a piece of classical Latin <br />{" "}
+              literature from 45 BC.
+            </p>
             <div className="flex mt-10">
-              <div className="w-[32px] h-[32px] bg-[#ffffff] rounded-full "><img src={iconf} alt="" /></div>
-              <div className="w-[32px] h-[32px] bg-[#5D50C6] rounded-full ms-3"><img src={icont} alt="" /></div>
-              <div className="w-[32px] h-[32px] bg-[#5D50C6] rounded-full ms-3"><img src={iconi} alt="" /></div>
+              <div className="w-[32px] h-[32px] bg-[#ffffff] rounded-full ">
+                <img src={iconf} alt="" />
+              </div>
+              <div className="w-[32px] h-[32px] bg-[#5D50C6] rounded-full ms-3">
+                <img src={icont} alt="" />
+              </div>
+              <div className="w-[32px] h-[32px] bg-[#5D50C6] rounded-full ms-3">
+                <img src={iconi} alt="" />
+              </div>
             </div>
           </div>
-          <div className=" lg:[954px] col-span-6 grid grid-cols-6 lg:flex lg:justify-between lg:ps-10 lg:pr-10 xl:ps-0 xl:pr-10 ">
+
+          
+          <div className="col-span-6 lg:flex xl:col-span-6 lg:justify-between ">
           <div className="col-span-2 ">
             <ul className="mt-[64px]">
-              <li className="font-bold xl:mt-5 flex justify-between"><span>Company</span> <div className="lg:hidden " onClick={()=> setCompany(!company)}><img src={down} alt="" /></div></li>
-              
-              {
-                company && company ? (
-                  <>
-              <li className="mt-4">About</li>
-              <li className="mt-4">Career</li>
-              <li className="mt-4">Mobile</li>
-                  </>
-              
-                ) : (<div className="hidden lg:block">
-                  <li className="mt-4">About</li>
-              <li className="mt-4">Career</li>
-              <li className="mt-4">Mobile</li>
-                  
-                </div>)
-              }
-            </ul>
-          </div>
-          <div className="col-span-2">
-          <ul className="mt-[64px] ">
-              <li className="font-bold xl:mt-5 flex justify-between"><span>Contact</span> <div className="lg:hidden " onClick={()=> setContact(!contact)}><img src={down} alt="" /></div></li>
-              {
-                contact && contact ? (
+              <li className="font-bold xl:mt-5 flex justify-between">
+                <span>Company</span>{" "}
+                <div
+                  className="lg:hidden "
+                  onClick={() => setCompany(!company)}
+                >
+                  <img src={down} alt="" />
+                </div>
+              </li>
+
+              {company && company ? (
                 <>
-              <li className="mt-4">Why Travlog?</li>
-              <li className="mt-4">Partner with us</li>
-              <li className="mt-4">FAQ's</li>
-              <li className="mt-4">Blog</li>
+                  <li className="mt-4">About</li>
+                  <li className="mt-4">Career</li>
+                  <li className="mt-4">Mobile</li>
                 </>
-                ) : (<div className="hidden lg:block">
-                  <li className="mt-4">Why Travlog?</li>
-              <li className="mt-4">Partner with us</li>
-              <li className="mt-4">FAQ's</li>
-              <li className="mt-4">Blog</li>
-                </div>)
-              }
+              ) : (
+                <div className="hidden lg:block">
+                  <li className="mt-4">About</li>
+                  <li className="mt-4">Career</li>
+                  <li className="mt-4">Mobile</li>
+                </div>
+              )}
             </ul>
           </div>
-          <div className="col-span-2">
-          <ul className="mt-[64px] ">
-              <li className="font-bold xl:mt-5 flex justify-between"> <span>Meet Us</span> <div className="lg:hidden " onClick={()=> setMeet(!meet)}><img src={down} alt="" /></div></li>
-              {
-                meet && meet ? (
+            <div className="">
+              <ul className="mt-[64px] ">
+                <li className="font-bold xl:mt-5 flex justify-between">
+                  <span>Contact</span>{" "}
+                  <div
+                    className="lg:hidden "
+                    onClick={() => setContact(!contact)}
+                  >
+                    <img src={down} alt="" />
+                  </div>
+                </li>
+                {contact && contact ? (
                   <>
-                  <li className="mt-4">+00 92 1234 56789</li>
-              <li className="mt-4">info@travlog.com</li>
-              <li className="mt-4 ">205. R Street, New York <br /> BD23200</li></>
-                ): (<div className="hidden lg:block"><li className="mt-4">+00 92 1234 56789</li>
-                <li className="mt-4">info@travlog.com</li>
-                <li className="mt-4">205. R Street, New York <br /> BD23200</li></div>)
-              }
-              
-            </ul>
-          </div>
+                    <li className="mt-4">Why Travlog?</li>
+                    <li className="mt-4">Partner with us</li>
+                    <li className="mt-4">FAQ's</li>
+                    <li className="mt-4">Blog</li>
+                  </>
+                ) : (
+                  <div className="hidden lg:block row-span-2">
+                    <li className="mt-4">Why Travlog?</li>
+                    <li className="mt-4">Partner with us</li>
+                    <li className="mt-4">FAQ's</li>
+                    <li className="mt-4">Blog</li>
+                  </div>
+                )}
+              </ul>
+            </div>
+            <div className="col-span-2">
+              <ul className="mt-[64px] ">
+                <li className="font-bold xl:mt-5 flex justify-between">
+                  {" "}
+                  <span>Meet Us</span>{" "}
+                  <div className="lg:hidden " onClick={() => setMeet(!meet)}>
+                    <img src={down} alt="" />
+                  </div>
+                </li>
+                {meet && meet ? (
+                  <>
+                    <li className="mt-4">+00 92 1234 56789</li>
+                    <li className="mt-4">info@travlog.com</li>
+                    <li className="mt-4 ">
+                      205. R Street, New York <br /> BD23200
+                    </li>
+                  </>
+                ) : (
+                  <div className="hidden lg:block">
+                    <li className="mt-4">+00 92 1234 56789</li>
+                    <li className="mt-4">info@travlog.com</li>
+                    <li className="mt-4">
+                      205. R Street, New York <br /> BD23200
+                    </li>
+                  </div>
+                )}
+              </ul>
+            </div>
           </div>
         </div>
       </footer>
