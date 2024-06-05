@@ -14,10 +14,10 @@ import brand5 from "../assets/img/Group 3.png";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center flex-col">
-      <div className="md:w-[1184px] md:h-[841px] md:grid md:grid-cols-12">
+    <div className="flex items-center justify-center flex-col ps-5 md:ps-0">
+      <div className=" md:w-[1184px] md:h-[841px] md:grid md:grid-cols-12">
         <div className="md:col-span-4 flex justify-start items-center mt-[450px] md:mt-[0px] absolute left-6 md:left-0 md:relative">
-          <div className="md:w-[412px] h-[577px] flex flex-col justify-center items-center">
+          <div className="md:w-[412px] ps-3 md:ps-0 h-[577px] flex flex-col justify-center items-center">
             <div className="md:w-[224px] h-[56px] rounded-full flex justify-center items-center shadow-sm">
               <p className="text-[#F85E9F] font-semibold">Explore the world!</p>
               <img className="ms-2 w-[20px] h-[20px]" src={work1} alt="" />

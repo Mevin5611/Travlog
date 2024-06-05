@@ -4,7 +4,7 @@ import menu from '../assets/img/menu (2).png'
 const Navbar = () => {
   return (
     <div className='flex items-center justify-center'>
-        <div className='w-[1184px] h-[113px] flex items-center justify-between'>
+        <div className=' w-[400px] md:w-[1184px] h-[113px] flex items-center justify-between'>
       <div className='flex items-center col-span-3 ms-5 md:ms-0'>
         <img className='w-[40px] h-[40px]' src={logo_nav} alt="" />
         <h1 className='font-bold ps-3 text-lg'>Travlog</h1>
@@ -21,7 +21,7 @@ const Navbar = () => {
         <button className='h-[49px] w-[115px]  rounded-full text-base font-semibold'>Log In</button>
         <button className='h-[49px] w-[115px] bg-[#5D50C6] text-white rounded-full '>Sign Up</button>
       </div>
-      <div className='mr-5'>
+      <div className='mr-5 md:hidden'>
         <img src={menu} alt="" />
       </div>
     </div>
