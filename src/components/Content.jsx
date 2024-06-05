@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import leftArrow from "../assets/img/arrow-left 1.png";
 import rightArrow from "../assets/img/arrow-left 2.png";
 import card1 from "../assets/img/Rectangle 6.png";
@@ -11,18 +11,60 @@ import keylogo1 from "../assets/img/Group 9239.png";
 import keylogo2 from "../assets/img/Group 9239 (1).png";
 import keylogo3 from "../assets/img/Group 9239 (2).png";
 import bg_key from "../assets/img/BACKGROUND.png";
-import logo_nav from "../assets/img/logo-nav.png";
-import iconf from "../assets/img/iconf.png";
-import icont from "../assets/img/icont.png";
-import iconi from "../assets/img/iconi.png";
-import down from "../assets/img/arrow-circle-down.9 1.png";
+import destinantion from '../assets/img/destination 1.png'
+import booking from '../assets/img/booking 1.png'
+import cloudy from '../assets/img/cloudy 1.png'
 
-const Explore = () => {
-  const [company, setCompany] = useState(false);
-  const [contact, setContact] = useState(false);
-  const [meet, setMeet] = useState(false);
+const Content = () => {
+
   return (
     <div>
+      <section>
+      <div className="xl:ms-[83px]  w-full h-[571px] xl:grid xl:grid-cols-12 ">
+        <div className="col-span-3 flex justify-center xl:justify-start items-center">
+          <div>
+            <h1 className="tracking-widest text-[#F85E9F] font-semibold text-lg text-center xl:text-left">
+              SERVICES
+            </h1>
+            <h3 className="font-[650]  text-[35px] xl:text-[38px] text-center xl:text-left m-3 xl:m-0">
+              Our top value <br className="hidden xl:block" /> categories <br className="xl:hidden"/> for you
+            </h3>
+          </div>
+        </div>
+        <div className="col-span-9 flex justify-center xl:justify-start items-center">
+          <div className="flex flex-col lg:flex-row">
+            <div className="xl:w-[350px] w-[300px] ms-2 h-[300px] lg:h-[443px] rounded-[32px] border border-[#1918251A] flex flex-col justify-center items-center">
+                <div>
+                    <img className="w-[64px] h-[64px]" src={destinantion} alt="" />
+                </div>
+                <div className="w-[222px] h-[153px] text-center mt-[32px]">
+                    <h1 className="font-bold text-xl">Best Tour Guide</h1>
+                    <p className="text-center mt-5 text-[#19182580]">What looked like a small <br /> patch of purple grass, <br /> above five feet.</p>
+                </div>
+            </div>
+            <div className="xl:w-[350px] w-[300px] ms-2 h-[300px] lg:h-[443px]  rounded-[32px] shadow-lg flex flex-col justify-center items-center xl:ms-5">
+                <div>
+                    <img className="w-[64px] h-[64px]" src={booking} alt="" />
+                </div>
+                <div className="w-[222px] h-[153px] text-center mt-[32px]">
+                    <h1 className="font-bold text-xl">Easy Booking</h1>
+                    <p className="text-center mt-5 text-[#19182580]">Square, was moving <br /> across the sand in their <br />direction.</p>
+                </div>
+            </div>
+            <div className="xl:w-[350px] w-[300px] ms-2 h-[300px] lg:h-[443px]  rounded-[32px] shadow-lg flex flex-col justify-center items-center xl:ms-5">
+                <div>
+                    <img className="w-[64px] h-[64px]" src={cloudy} alt="" />
+                </div>
+                <div className="w-[222px] h-[153px] text-center mt-[32px]">
+                    <h1 className="font-bold text-xl">Best Tour Guide</h1>
+                    <p className="text-center mt-5 text-[#19182580]">What looked like a small <br /> patch of purple grass, <br /> above five feet.</p>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      </section>
       <section className="flex flex-col justify-center items-center">
         <div className="xl:w-[1184px] h-[867px] xl:mt-[60px] lg:mt-20 mt-[540px]">
           <div className="h-[100px] flex flex-col xl:flex-row justify-between items-center">
@@ -214,121 +256,9 @@ const Explore = () => {
           </div>
         </div>
       </section>
-      <footer className="flex justify-center items-center mt-[540px] lg:mt-[840px] xl:mt-0">
-        <div className="xl:w-[1184px] lg:w-[954px] lg:flex lg:flex-col h-[434px] xl:grid xl:grid-cols-12 ">
-          <div className="col-span-6  lg:w-[954px] lg:p-10 xl:p-0 ">
-            <div className="flex justify-start items-center mt-[64px]">
-              <img className="w-[40px] h-[40px]" src={logo_nav} alt="" />
-              <h1 className="font-bold ps-3 text-lg">Travlog</h1>
-            </div>
-            <p className="mt-5">
-              Contrary to popular belief, Lorem Ipsum is not simply <br />{" "}
-              random text. It has roots in a piece of classical Latin <br />{" "}
-              literature from 45 BC.
-            </p>
-            <div className="flex mt-10">
-              <div className="w-[32px] h-[32px] bg-[#ffffff] rounded-full ">
-                <img src={iconf} alt="" />
-              </div>
-              <div className="w-[32px] h-[32px] bg-[#5D50C6] rounded-full ms-3">
-                <img src={icont} alt="" />
-              </div>
-              <div className="w-[32px] h-[32px] bg-[#5D50C6] rounded-full ms-3">
-                <img src={iconi} alt="" />
-              </div>
-            </div>
-          </div>
-
-          
-          <div className="col-span-6 lg:flex xl:col-span-6 lg:justify-between ">
-          <div className="col-span-2 ">
-            <ul className="mt-[64px]">
-              <li className="font-bold xl:mt-5 flex justify-between">
-                <span>Company</span>{" "}
-                <div
-                  className="lg:hidden "
-                  onClick={() => setCompany(!company)}
-                >
-                  <img src={down} alt="" />
-                </div>
-              </li>
-
-              {company && company ? (
-                <>
-                  <li className="mt-4">About</li>
-                  <li className="mt-4">Career</li>
-                  <li className="mt-4">Mobile</li>
-                </>
-              ) : (
-                <div className="hidden lg:block">
-                  <li className="mt-4">About</li>
-                  <li className="mt-4">Career</li>
-                  <li className="mt-4">Mobile</li>
-                </div>
-              )}
-            </ul>
-          </div>
-            <div className="">
-              <ul className="mt-[64px] ">
-                <li className="font-bold xl:mt-5 flex justify-between">
-                  <span>Contact</span>{" "}
-                  <div
-                    className="lg:hidden "
-                    onClick={() => setContact(!contact)}
-                  >
-                    <img src={down} alt="" />
-                  </div>
-                </li>
-                {contact && contact ? (
-                  <>
-                    <li className="mt-4">Why Travlog?</li>
-                    <li className="mt-4">Partner with us</li>
-                    <li className="mt-4">FAQ's</li>
-                    <li className="mt-4">Blog</li>
-                  </>
-                ) : (
-                  <div className="hidden lg:block row-span-2">
-                    <li className="mt-4">Why Travlog?</li>
-                    <li className="mt-4">Partner with us</li>
-                    <li className="mt-4">FAQ's</li>
-                    <li className="mt-4">Blog</li>
-                  </div>
-                )}
-              </ul>
-            </div>
-            <div className="col-span-2">
-              <ul className="mt-[64px] ">
-                <li className="font-bold xl:mt-5 flex justify-between">
-                  {" "}
-                  <span>Meet Us</span>{" "}
-                  <div className="lg:hidden " onClick={() => setMeet(!meet)}>
-                    <img src={down} alt="" />
-                  </div>
-                </li>
-                {meet && meet ? (
-                  <>
-                    <li className="mt-4">+00 92 1234 56789</li>
-                    <li className="mt-4">info@travlog.com</li>
-                    <li className="mt-4 ">
-                      205. R Street, New York <br /> BD23200
-                    </li>
-                  </>
-                ) : (
-                  <div className="hidden lg:block">
-                    <li className="mt-4">+00 92 1234 56789</li>
-                    <li className="mt-4">info@travlog.com</li>
-                    <li className="mt-4">
-                      205. R Street, New York <br /> BD23200
-                    </li>
-                  </div>
-                )}
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   );
 };
 
-export default Explore;
+export default Content;
