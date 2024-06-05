@@ -1,15 +1,15 @@
 import React from "react";
-import work1 from "../assets/img/work 1.png";
-import play from "../assets/img/play-circle.5 1.png";
+import work1 from "../../assets/img/work 1.png";
+import play from "../../assets/img/play-circle.5 1.png";
 
-import frames from "../assets/img/herobg.png";
+import frames from "../../assets/img/herobg.png";
 
 
-import brand1 from "../assets/img/Group.png";
-import brand2 from "../assets/img/Group 2.png";
-import brand3 from "../assets/img/Group (1).png";
-import brand4 from "../assets/img/Group 9235.png";
-import brand5 from "../assets/img/Group 3.png";
+import brand1 from "../../assets/img/Group.png";
+import brand2 from "../../assets/img/Group 2.png";
+import brand3 from "../../assets/img/Group (1).png";
+import brand4 from "../../assets/img/Group 9235.png";
+import brand5 from "../../assets/img/Group 3.png";
 
 
 const Hero = () => {

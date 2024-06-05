@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import logo_nav from "../assets/img/logo-nav.png";
-import iconf from "../assets/img/iconf.png";
-import icont from "../assets/img/icont.png";
-import iconi from "../assets/img/iconi.png";
-import down from "../assets/img/arrow-circle-down.9 1.png";
+import logo_nav from "../../assets/img/logo-nav.png";
+import iconf from "../../assets/img/iconf.png";
+import icont from "../../assets/img/icont.png";
+import iconi from "../../assets/img/iconi.png";
+import down from "../../assets/img/arrow-circle-down.9 1.png";
 
 const Footer = () => {
     const [company, setCompany] = useState(false);

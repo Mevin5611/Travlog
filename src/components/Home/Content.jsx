@@ -1,19 +1,19 @@
 import React from "react";
-import leftArrow from "../assets/img/arrow-left 1.png";
-import rightArrow from "../assets/img/arrow-left 2.png";
-import card1 from "../assets/img/Rectangle 6.png";
-import card2 from "../assets/img/Rectangle 6 (1).png";
-import card3 from "../assets/img/Rectangle 6 (2).png";
-import star from "../assets/img/star 1.png";
-import mainimg from "../assets/img/Group 9238.png";
-import travellogo from "../assets/img/Frame 50.png";
-import keylogo1 from "../assets/img/Group 9239.png";
-import keylogo2 from "../assets/img/Group 9239 (1).png";
-import keylogo3 from "../assets/img/Group 9239 (2).png";
-import bg_key from "../assets/img/BACKGROUND.png";
-import destinantion from '../assets/img/destination 1.png'
-import booking from '../assets/img/booking 1.png'
-import cloudy from '../assets/img/cloudy 1.png'
+import leftArrow from "../../assets/img/arrow-left 1.png";
+import rightArrow from "../../assets/img/arrow-left 2.png";
+import card1 from "../../assets/img/Rectangle 6.png";
+import card2 from "../../assets/img/Rectangle 6 (1).png";
+import card3 from "../../assets/img/Rectangle 6 (2).png";
+import star from "../../assets/img/star 1.png";
+import mainimg from "../../assets/img/Group 9238.png";
+import travellogo from "../../assets/img/Frame 50.png";
+import keylogo1 from "../../assets/img/Group 9239.png";
+import keylogo2 from "../../assets/img/Group 9239 (1).png";
+import keylogo3 from "../../assets/img/Group 9239 (2).png";
+import bg_key from "../../assets/img/BACKGROUND.png";
+import destinantion from '../../assets/img/destination 1.png'
+import booking from '../../assets/img/booking 1.png'
+import cloudy from '../../assets/img/cloudy 1.png'
 
 const Content = () => {
 

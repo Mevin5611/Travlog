@@ -1,6 +1,6 @@
 import React from 'react'
-import logo_nav from '../assets/img/logo-nav.png'
-import menu from '../assets/img/menu (2).png'
+import logo_nav from '../../assets/img/logo-nav.png'
+import menu from '../../assets/img/menu (2).png'
 const Navbar = () => {
   return (
     <div className='flex items-center justify-center'>
